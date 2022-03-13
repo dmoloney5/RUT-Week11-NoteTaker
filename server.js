@@ -37,7 +37,7 @@ function createNewNote(body, notesArr) {
     const newNote = body;
     if (!Array.isArray(notesArr))
         notesArr = [];
-    
+
     if (notesArr.length === 0)
         notesArr.push(0);
 
@@ -70,7 +70,7 @@ function deleteNote(id, notesArr) {
                 JSON.stringify(notesArr, null, 2)
             );
 
-           
+
         }
     }
 }
