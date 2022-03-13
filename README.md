@@ -1,6 +1,6 @@
 # RUT-Week11-NoteTaker
  ## Description
-  I created an app to help keep tracks of notes on the go.  This app you can create, update, and delete notes.  So, when you are out, and you need to take a note you can use this app to help you keep track.  I'm using Heroku to make this app accessible from anywhere.
+  I created an app to help keep tracks of notes on the go.  This app you can create and delete notes.  So, when you are out, and you need to take a note you can use this app to help you keep track.  I'm using Heroku to make this app accessible from anywhere.
 
   
   ## Table of Contents
@@ -30,4 +30,4 @@
   ![YouTube](https://www.youtube.com/watch?v=tCOyne8y0NU)
 
   ## ScreenShot
-  ![screenshot](https://github.com/dmoloney5/RUT-WEEK10-Teams-Info/blob/main/image/My%20Team1.jpg)
+  ![screenshot](https://github.com/dmoloney5/RUT-Week11-NoteTaker/blob/main/public/assets/images/notetake.png)
