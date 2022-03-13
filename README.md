@@ -27,7 +27,7 @@
   Nodejs, ExpressJS, FS, and Heroku
   
   ## Video
-  ![YouTube](https://www.youtube.com/watch?v=tCOyne8y0NU)
+  ![YouTube](https://youtu.be/tCOyne8y0NU)
 
   ## ScreenShot
   ![screenshot](https://github.com/dmoloney5/RUT-Week11-NoteTaker/blob/main/public/assets/images/notetake.png)
