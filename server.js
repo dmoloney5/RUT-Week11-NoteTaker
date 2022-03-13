@@ -33,21 +33,21 @@ app.get('*', (req, res) => {
 });
 
 //Creating New Note
-function createNewNote(body, notesArray) {
+function createNewNote(body, notesArr) {
     const newNote = body;
-    if (!Array.isArray(notesArray))
-        notesArray = [];
+    if (!Array.isArray(notesArr))
+        notesArr = [];
     
-    if (notesArray.length === 0)
-        notesArray.push(0);
+    if (notesArr.length === 0)
+        notesArr.push(0);
 
-    body.id = notesArray[0];
-    notesArray[0]++;
+    body.id = notesArr[0];
+    notesArr[0]++;
 
-    notesArray.push(newNote);
+    notesArr.push(newNote);
     fs.writeFileSync(
         path.join(__dirname, './db/db.json'),
-        JSON.stringify(notesArray, null, 2)
+        JSON.stringify({ newNote: notesArr }, null, 2)
     );
     return newNote;
 }
@@ -59,15 +59,15 @@ app.post('/api/notes', (req, res) => {
 });
 
 //Delete a Note
-function deleteNote(id, notesArray) {
-    for (let i = 0; i < notesArray.length; i++) {
-        let note = notesArray[i];
+function deleteNote(id, notesArr) {
+    for (let i = 0; i < notesArr.length; i++) {
+        let note = notesArr[i];
 
         if (note.id == id) {
-            notesArray.splice(i, 1);
+            notesArr.splice(i, 1);
             fs.writeFileSync(
                 path.join(__dirname, './db/db.json'),
-                JSON.stringify(notesArray, null, 2)
+                JSON.stringify(notesArr, null, 2)
             );
 
            
